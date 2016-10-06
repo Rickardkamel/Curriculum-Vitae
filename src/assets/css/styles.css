@@ -1,0 +1,135 @@
+.section-title {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 50px;
+    color: #2c3e50;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    background: url(../images/section-divider.png) no-repeat 0 0;
+    height: 15px;
+    width: 113px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -40px;
+    margin: 0 auto;
+}
+
+
+
+/* HOME */
+@media (max-width : 640px) {
+    .tt-fullHeight{
+        height: 560px !important;
+    }
+}
+
+
+#home {
+	background: url(../images/01.jpg) no-repeat center center;
+	-webkit-background-attachment: fixed;
+    background-attachment: fixed;
+	background-color: #222;
+	background-size: cover;
+	padding: 0;
+	position: relative;
+}
+#home:before {
+	content: "";
+	background-color: rgba(26, 30, 35, 0.85);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.intro {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	text-align: center;
+	-webkit-transform: translate(0%, -50%);
+	   -moz-transform: translate(0%, -50%);
+		-ms-transform: translate(0%, -50%);
+		 -o-transform: translate(0%, -50%);
+			transform: translate(0%, -50%);
+	padding: 0 15px;
+}
+
+.intro h1{
+	font-size: 60px;
+	line-height: 80px;
+	margin-bottom: 16px;
+	color: #52b3d9;
+}
+.intro h1 span{
+	color: #68c3a3;
+}
+.intro p{
+	color: #f7f7f7;
+	margin-bottom: 40px;
+}
+
+.intro-sub {
+	color: #fff;
+	font-size: 24px;
+	line-height: 32px;
+	font-weight: 700;
+	text-transform: uppercase;
+	display: block;
+	margin-bottom: 20px;
+}
+
+
+/* SOCIAL ICONS */
+.social-icons {
+    margin-top: 20px;
+}
+.social-icons a i{
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 7px;
+    line-height: 40px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+}
+
+.social-icons a i::before {
+    position: relative;
+    z-index: 1;
+}
+
+.social-icons a i::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transition: all 300ms;
+       -moz-transition: all 300ms;
+         -o-transition: all 300ms;
+            transition: all 300ms;            
+}
+
+.social-icons a i:hover::after{
+    background: #68c3a3;
+    border: 1px solid transparent;
+    z-index: 0;
+}
+
