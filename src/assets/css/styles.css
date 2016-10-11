@@ -1,3 +1,270 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    line-height: 28px;
+    font-weight: 300;
+    font-size: 14px;
+    color:#282828;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body, html{
+    overflow-x:hidden;
+}
+
+/* Link style
+---------------------------------------------------------*/
+a {
+    color: #68c3a3;
+}
+a,
+a > * {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+a:focus,
+a:hover {
+    outline: none;
+    color: #333333;
+    text-decoration: none;
+}
+
+
+/* Transition elsements
+-------------------------------------------------------- */
+.navbar a,
+.form-control {
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	   -moz-transition: all 0.4s ease-in-out 0s;
+		-ms-transition: all 0.4s ease-in-out 0s;
+		 -o-transition: all 0.4s ease-in-out 0s;
+			transition: all 0.4s ease-in-out 0s;
+}
+
+a,
+.btn {
+	-webkit-transition: all 0.125s ease-in-out 0s;
+	   -moz-transition: all 0.125s ease-in-out 0s;
+		-ms-transition: all 0.125s ease-in-out 0s;
+		 -o-transition: all 0.125s ease-in-out 0s;
+			transition: all 0.125s ease-in-out 0s;
+}
+
+/* Reset box-shadow
+/* ------------------------------------------------------ */
+
+.btn,
+.form-control,
+.form-control:hover,
+.form-control:focus,
+.navbar-custom .dropdown-menu {
+	-webkit-box-shadow: none;
+			box-shadow: none;
+}
+
+
+
+
+/* === Typography === */
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;
+    margin:0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size     : 12px;
+}
+
+
+
+/* === FORM STYLE === */
+.form-control {
+    height: 45px;
+    background-color: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border-color: #68c3a3;
+    box-shadow: none;
+}
+
+
+
+
+/* Alert Style
+-----------------------------------------------------*/
+.alert {
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+
+.alert strong {
+  display: inline-block !important;
+  margin: 0 !important;
+}
+
+
+
+/* BUTTON STYLE
+-----------------------------------------------------*/
+/*common-btn*/
+.btn{
+    border: 0;
+    border-bottom: 3px solid;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 28px;
+    padding: 9px 22px;
+}
+
+/*large-btn*/
+.btn-lg, 
+.btn-group-lg>.btn {
+    padding: 14px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+/*btn-primary*/
+.btn-primary{
+    background-color:#68c3a3;
+    border-color: rgba(51, 51, 51, 0.15);
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary.focus, 
+.btn-primary:active, 
+.btn-primary.active, 
+.open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: #4eb28f;
+    border-color: #4eb28f;
+}
+
+/*btn-info*/
+.btn-info{
+    background-color:#52b3d9;
+    border-color: rgba(51, 51, 51, 0.15);
+}
+
+.btn-info:hover, 
+.btn-info:focus, 
+.btn-info.focus, 
+.btn-info:active, 
+.btn-info.active, 
+.open>.dropdown-toggle.btn-info {
+    color: #fff;
+    background-color: #4aa0c2;
+    border-color: #4aa0c2;
+}
+
+/*btn-default*/
+.btn-default {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default.focus, 
+.btn-default:active, 
+.btn-default.active{
+    color: #68c3a3;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+button:focus {
+    outline: none;
+}
+
+
+/* IMAGES */
+
+.logo {
+    margin: -6px 0px 0px 0px;
+}
+
+img {
+    width: 100%;
+}
+
+hr {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+/* LIST STYLE */
+ul, ol {
+    margin     : 0;
+    padding    : 0;
+    list-style : none
+}
+
+
+ul.list-check {
+    
+}
+
+ul.list-check li{
+    position: relative;
+    font-size: 18px;
+    line-height: 32px;
+}
+ul.list-check li::before {
+    content: "\f00c";
+    font-family: fontawesome;
+    color: #68c3a3;
+    margin-right: 10px;
+}
+
+
+/* MAIN */
+.section-padding {
+	padding: 120px 0 100px;
+}
+
+
+/* SECTION TITLE */
 .section-title {
     margin-bottom: 80px;
     text-align: center;
@@ -9,7 +276,7 @@
 
 .section-title::after {
     content: "";
-    background: url(../images/section-divider.png) no-repeat 0 0;
+    background: url(../../assets/images/section-divider.png) no-repeat 0 0;
     height: 15px;
     width: 113px;
     position: absolute;
@@ -19,9 +286,8 @@
     margin: 0 auto;
 }
 
-
-
 /* HOME */
+
 @media (max-width : 640px) {
     .tt-fullHeight{
         height: 560px !important;
@@ -88,6 +354,7 @@
 
 
 /* SOCIAL ICONS */
+
 .social-icons {
     margin-top: 20px;
 }
@@ -186,4 +453,199 @@
 	30%  { top:10px; opacity: 1;}
 	100% { top:25px; opacity: 0;}
 }
+
+/* About Section */
+.short-info {
+    margin-bottom: 40px;
+}
+
+.short-info h3 {
+    margin-bottom: 30px;
+}
+
+.short-info ul {
+    margin-top: 10px;
+    display:inline-block;
+}
+.short-info ul li {
+    width: 50%;
+    float: left;
+}
+
+.my-signature{
+    margin-bottom: 45px;
+}
+.my-signature img{
+    width: inherit;
+}
+
+
+/* Download Button */
+.download-button a {
+    margin-right: 20px;
+    color: #fff;
+}
+.download-button a i {
+    margin-right: 10px;
+}
+
+
+.biography{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border:1px solid #EEEEEE;
+    position: relative;
+}
+
+.biography::after{
+    content: "";
+    border-bottom: 1px solid #EEEEEE;
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    border-radius: 10px;
+    height: 20px;
+}
+
+.myphoto{
+    position: relative;
+    background: url(../images/photo-frame.png) bottom center no-repeat;
+    background-size: contain;
+}
+
+.myphoto img{
+    position: relative;
+    z-index: -1;
+}
+
+.biography ul{
+    padding:25px 20px 30px;
+}
+
+.biography ul li{
+    padding:5px 0;
+    font-size: 16px;
+    border-bottom:1px solid #EEEEEE;
+}
+
+.biography ul li:last-child{
+    border-bottom:0;
+}
+
+
+/* === NAVIGATION === */
+.header {
+    border-bottom: 1px solid #eee;
+    position: relative;
+    width: 100%;
+    z-index: 998;
+    padding-bottom: 1px;
+    background: #fff;
+}
+
+.header::after {
+    border-bottom:1px solid #eee;
+    width: 100%;
+    position: absolute;
+    content: "";
+    height: 2px;
+    bottom: 1px;
+    left: 0;
+}
+
+.navbar-custom {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+.navbar-custom,
+.navbar-custom .dropdown-menu {
+    background: #fff;
+    padding: 0;
+}
+
+.navbar-custom ul li a span{
+    margin-left:5px;
+}
+
+.navbar-custom .dropdown-menu {
+    margin-top:10px;
+    display: block;
+    visibility: hidden;
+    opacity:0;
+    border: 1px solid #ddd;
+    border-top: 2px solid #68c3a3;
+    border-radius: 0;
+    border-bottom: 3px double #ddd;
+    background-color: #FFFFFF;
+    -webkit-transition:all 400ms;
+    -moz-transition:all 400ms;
+    -o-transition:all 400ms;
+    transition:all 400ms;
+}
+
+.navbar-right .dropdown-menu {
+  right: auto;
+  left: 0;
+}
+.navbar-custom .navbar-nav > li:hover .dropdown-menu{
+    display: block;
+    opacity:1;
+    visibility: visible;
+    margin-top:-2px;
+}
+
+.navbar-custom .navbar-nav > li > a{
+    color: #282828;
+    font-size: 14px;
+    font-weight: 700;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.navbar-custom .dropdown-menu > li{
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.navbar-custom .dropdown-menu > li:last-child{
+    border-bottom: 0;
+}
+
+.navbar-custom .dropdown-menu > li > a {
+    padding: 10px 20px;
+    color: #282828;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar-custom .nav li.active,
+.navbar-custom .nav li a:hover,
+.navbar-custom .nav li a:focus,
+.navbar-custom .navbar-nav > li.active > a {
+    background: none;
+    outline: 0;
+    color: #68c3a3;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.navbar-custom .nav .open > a,
+.navbar-custom .dropdown-menu > li > a:hover,
+.navbar-custom .dropdown-menu > li > a:focus {
+    background: #f5f5f5;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background: #222;
+}
+
+
 
