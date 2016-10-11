@@ -3,9 +3,10 @@ import { NgModule } from '@angular/core';
 import { AboutComponent } from './about.component';
 
 @NgModule({
-    imports: [
+    imports: [],
+    exports: [
+        AboutComponent
     ],
-    exports: [],
     declarations: [
         AboutComponent
     ],
