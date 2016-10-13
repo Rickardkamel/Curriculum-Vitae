@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
  <app-home></app-home>
  <app-header></app-header>
  <app-about></app-about>
+ <app-resume></app-resume>
+ <app-skills></app-skills>
   `,
 })
 export class ShellComponent implements OnInit {
