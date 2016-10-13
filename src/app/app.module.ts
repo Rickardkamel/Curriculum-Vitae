@@ -14,6 +14,8 @@ import { ShellComponent } from './shell.component'
 import { HomeModule } from './home/home.module';
 import { HeaderModule } from './header/header.module';
 import { AboutModule } from './about/about.module';
+import { ResumeModule } from './resume/resume.module';
+import { SkillsModule } from './skills/skills.module';
 
 // Routing
 import { AppRoutingModule } from './routes/app-routing.module';
@@ -25,12 +27,18 @@ import { AppRoutingModule } from './routes/app-routing.module';
     ShellComponent,
   ],
   imports: [
+    HttpModule,
     BrowserModule,
     FormsModule,
+
+    //ComponentModules
     HomeModule,
     HeaderModule,
     AboutModule,
-    HttpModule,
+    ResumeModule,
+    SkillsModule,
+
+    //Routing
     AppRoutingModule,
   ],
   providers: [],
