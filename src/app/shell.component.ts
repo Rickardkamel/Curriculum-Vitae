@@ -9,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
  <app-about></app-about>
  <app-resume></app-resume>
  <app-skills></app-skills>
+ <app-contact></app-contact>
   `,
 })
 export class ShellComponent implements OnInit {

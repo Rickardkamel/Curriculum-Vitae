@@ -16,6 +16,7 @@ import { HeaderModule } from './header/header.module';
 import { AboutModule } from './about/about.module';
 import { ResumeModule } from './resume/resume.module';
 import { SkillsModule } from './skills/skills.module';
+import { ContactModule } from './contact/contact.module';
 
 // Routing
 import { AppRoutingModule } from './routes/app-routing.module';
@@ -31,14 +32,15 @@ import { AppRoutingModule } from './routes/app-routing.module';
     BrowserModule,
     FormsModule,
 
-    //ComponentModules
+    // ComponentModules
     HomeModule,
     HeaderModule,
     AboutModule,
     ResumeModule,
     SkillsModule,
+    ContactModule,
 
-    //Routing
+    // Routing
     AppRoutingModule,
   ],
   providers: [],

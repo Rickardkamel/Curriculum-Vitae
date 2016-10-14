@@ -1092,4 +1092,41 @@ ul.list-check li::before {
 .chart .chart-text h3{font-size:22px;}
 
 
+/* Contact Section */
+.push-down{
+    margin-top: 140px;
+}
+
+.contact-section  {
+  
+}
+
+.contact-section strong {
+    display: block;
+    text-transform: uppercase;
+}
+.contact-form strong {
+    margin-bottom: 40px;
+}
+
+.contact-form textarea.form-control {
+    height: 115px;
+}
+
+.contact-form .btn {
+    margin-top: 15px;
+}
+
+.contact-section div > i{
+    float: left;
+    font-size: 45px;
+    margin-right: 20px;
+}
+.contact-section address,
+.contact-section .contact-number {
+    overflow: hidden;
+    line-height: 30px;
+    font-weight: 400;
+    margin-bottom: 45px
+}
 
