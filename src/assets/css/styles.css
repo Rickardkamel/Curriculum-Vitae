@@ -678,6 +678,9 @@ ul.list-check li::before {
     background: #222;
 }
 
+.logo-header {
+    position: absolute;
+}
 
 /* Resume Section */
 
