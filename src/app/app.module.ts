@@ -17,6 +17,7 @@ import { AboutModule } from './about/about.module';
 import { ResumeModule } from './resume/resume.module';
 import { SkillsModule } from './skills/skills.module';
 import { ContactModule } from './contact/contact.module';
+import { TechnologiesModule } from './technologies/technologies.module';
 
 // Routing
 import { AppRoutingModule } from './routes/app-routing.module';
@@ -39,6 +40,7 @@ import { AppRoutingModule } from './routes/app-routing.module';
     ResumeModule,
     SkillsModule,
     ContactModule,
+    TechnologiesModule,
 
     // Routing
     AppRoutingModule,
