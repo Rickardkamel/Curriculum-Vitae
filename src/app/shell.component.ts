@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
  <app-home></app-home>
  <app-header></app-header>
  <app-about></app-about>
+ <app-technologies></app-technologies>
  <app-resume></app-resume>
  <app-skills></app-skills>
  <app-contact></app-contact>
