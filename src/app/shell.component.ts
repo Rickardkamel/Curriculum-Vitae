@@ -11,6 +11,10 @@ import { Component, OnInit } from '@angular/core';
  <app-resume></app-resume>
  <app-skills></app-skills>
  <app-contact></app-contact>
+ 
+ <div class="scroll-up" style="display: block;">
+		<a href="#home"><i class="fa fa-angle-up"></i></a>
+	</div>
   `,
 })
 export class ShellComponent implements OnInit {
