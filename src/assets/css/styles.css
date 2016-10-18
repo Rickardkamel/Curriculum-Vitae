@@ -1154,28 +1154,28 @@ ul.list-check li::before {
     margin-top: 25%;
 }
 
-.service-box .tech-visible{
+.technologies-box .tech-visible{
     display: none;
 }
 
-.service-box:hover .tech-visible{
+.technologies-box:hover .tech-visible{
     display: block;
     position: absolute;
     width: 100%;
 }
 
-.service-section {
+.technologies-section {
     background: url(../../assets/images/service-bg.jpg) no-repeat center center;
     background-size: cover;
     padding:120px 0;
 }
-.service-section h2 {
+.technologies-section h2 {
     color: #fff;
 }
-.service-wrap{
+.technologies-wrap{
     padding: 40px 0
 }
-.service-box {
+.technologies-box {
     cursor: pointer;
     text-align: center;
     position: relative;
@@ -1183,7 +1183,7 @@ ul.list-check li::before {
     height: 180px;
     margin: 0 auto;
 }
-.service-box::after {
+.technologies-box::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1199,33 +1199,60 @@ ul.list-check li::before {
     transform: rotate(45deg);
     border-radius: 15px;
 }
-.service-box i {
+.technologies-box i {
     font-size: 40px;
     color: #fff;
     line-height: 100px;
     z-index: 100;
     position: relative;
 }
-.service-box h3 {
+.technologies-box h3 {
     font-size: 18px;
     line-height: 18px;
     color: #fff;
     z-index: 100;
     position: relative;
 }
-.service-box:hover.service-box::after{
+.technologies-box:hover.technologies-box::after{
     background: rgba(255,255,255,0.7);
     border: 1px solid transparent;
 }
-.service-box:hover i,
-.service-box:hover h3{
+.technologies-box:hover i,
+.technologies-box:hover h3{
     color: #2c3e50;
 }
-.service-box i,
-.service-box h3,
-.service-box::after {
+.technologies-box i,
+.technologies-box h3,
+.technologies-box::after {
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
     -o-transition: all 300ms;
     transition: all 300ms;
+}
+
+/* Scroll to top */
+
+.scroll-up {
+	position: fixed;
+	display: none;
+	z-index: 999;
+	bottom: 1.8em;
+	right: 1.8em;
+}
+
+.scroll-up a {
+	background-color: #68c3a3;
+	display: block;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+	line-height: 28px;
+}
+
+.scroll-up a:hover,
+.scroll-up a:active {
+	background-color: rgba(235, 235, 235, .8);
+	color: #222;
 }
