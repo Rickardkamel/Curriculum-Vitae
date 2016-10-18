@@ -1,6 +1,5 @@
 jQuery(function ($) {
 
-    alert('hello');
     'use strict';
 
     $('.skill-progress').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
