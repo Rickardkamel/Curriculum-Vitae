@@ -253,6 +253,9 @@ button:focus {
 
 .logo {
     margin: -6px 0px 0px 0px;
+    /*border-radius: 50px;
+    width: 10%;
+    height: auto;*/
 }
 
 img {

@@ -22,11 +22,12 @@ export class HeaderComponent implements OnInit {
         topSpacing: 0
       });
 
-      // $('body').scrollspy({
-      //     target: '.navbar-custom',
-      //     offset: 70
-      // })
-    } ());
+
+        $('body').scrollspy({
+            target: '.navbar-custom',
+            offset: 70
+         })
+    }());
   }
 
 }
