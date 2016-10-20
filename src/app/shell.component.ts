@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-shell',
-  template: 
+  template:
   `
  <app-home></app-home>
  <app-header></app-header>
@@ -17,8 +17,9 @@ import { Component, OnInit } from '@angular/core';
 	</div>
   `,
 })
+
 export class ShellComponent implements OnInit {
- 
+
   constructor() { }
 
   ngOnInit() {

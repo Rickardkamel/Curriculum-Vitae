@@ -8,25 +8,25 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  redirectToHome() {
-    window.scrollTo(0, 0);
+  refreshPage() {
+    location.reload();
   }
 
   ngOnInit() {
     this.stickyHeader();
   }
-  
-  stickyHeader(){
-    (function () {
-        $('.header').sticky({
-            topSpacing: 0
-        });
 
-        // $('body').scrollspy({
-        //     target: '.navbar-custom',
-        //     offset: 70
-        // })
-    }());
+  stickyHeader() {
+    (function () {
+      $('.header').sticky({
+        topSpacing: 0
+      });
+
+      // $('body').scrollspy({
+      //     target: '.navbar-custom',
+      //     offset: 70
+      // })
+    } ());
   }
 
 }
