@@ -14,13 +14,21 @@ jQuery(function ($) {
     // Back to top
     (function () {
         $(window).scroll(function() {
-            // alert('hello');
-            
             if ($(this).scrollTop() > 500) {
                 $('.scroll-up').fadeIn();
             } else {
                 $('.scroll-up').fadeOut();
             }
         });
+    }());
+
+    // Fullscreen image
+    (function () {
+        $(".tt-fullHeight").height($(window).height());
+
+        $(window).resize(function(){
+            $(".tt-fullHeight").height($(window).height());
+        });
+
     }());
 });
