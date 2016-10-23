@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
  <app-skills></app-skills>
  <app-contact></app-contact>
  
- <div class="scroll-up" style="display: block;">
+<div class="scroll-up">
 		<a href="#home"><i class="fa fa-angle-up"></i></a>
 	</div>
   `,
