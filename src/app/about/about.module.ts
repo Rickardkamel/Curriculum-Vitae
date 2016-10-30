@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { AboutComponent } from './about.component';
+import { AboutService } from './about.service';
 
 @NgModule({
     imports: [],
@@ -10,7 +11,7 @@ import { AboutComponent } from './about.component';
     declarations: [
         AboutComponent
     ],
-    providers: []
+    providers: [AboutService]
 })
 
 export class AboutModule { }
