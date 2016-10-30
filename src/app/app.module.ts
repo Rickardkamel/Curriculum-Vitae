@@ -6,6 +6,9 @@ import { HttpModule } from '@angular/http';
 
 
 // --- ProjectImports --- \\
+//ServiceImports
+import { GlobalVariableService } from './shared/global-variable.service';
+
 // SourceModules
 import { AppComponent } from './app.component';
 import { ShellComponent } from './shell.component'
@@ -45,7 +48,7 @@ import { AppRoutingModule } from './routes/app-routing.module';
     // Routing
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [GlobalVariableService],
   bootstrap: [AppComponent]
 })
 
