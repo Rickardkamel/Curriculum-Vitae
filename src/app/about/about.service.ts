@@ -6,7 +6,7 @@ import 'rxjs/Rx';
 
 @Injectable()
 export class AboutService {
-    headers = new Headers({
+    header = new Headers({
         'Content-Type': 'application/json'
     });
     private apiUrl = this.globalVariable.apiUrl;
@@ -17,7 +17,12 @@ export class AboutService {
     ) { }
 
     getAboutMe() {
-        return this.http.get(this.apiUrl + 'api/about/1', { headers: this.headers })
+        return this.http.get(this.apiUrl + 'api/about/1', { headers: this.header })
             .map((response: Response) => response.json());
+    }
+
+    getProjects(){
+        return this.http.get(this.apiUrl + 'api/project', { headers: this.header })
+        .map((response: Response) => response.json());
     }
 }
