@@ -1,6 +1,131 @@
 <section id="resume" class="resume-section section-padding">
         <div class="container">
             <h2 class="section-title wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Resume</h2>
+            <div class="row" *ngFor="let resume of resumeList">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>{{resume.Section}}</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline" *ngFor="let timeStamp of resume.TimeStamps">
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                    <span class="month">{{timeStamp.FromDate | date:'y'}}-now (until May 2017)</span>
+                                </div><!-- /posted-date -->
+
+                                <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>{{timeStamp.Title}}</h3>
+                                            <span>{{timeStamp.SubTitle}}</span>
+                                        </div><!-- /timeline-heading -->
+
+                                        <div class="timeline-body">
+                                            <p>{{timeStamp.Text}}</p>
+                                        </div><!-- /timeline-body -->
+                                    </div> <!-- /timeline-content -->
+                                </div><!-- /timeline-panel -->
+                            </li>
+                            <!--<li class="timeline-inverted">
+                                <div class="posted-date">
+                                    <span class="month">2015-2015</span>
+                                </div>
+
+                                <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Personal Trainer Certificate</h3>
+                                            <span>Personal Trainer, DS Training School, Stockholm, Sweden</span>
+                                        </div>
+
+                                        <div class="timeline-body">
+                                            <p>I have always had a burning passion for training. After I have helped many with their training, I felt that I wanted to invest in myself and procure deeper knowledge of personal training and how the anatomy works. </p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2007-2010</span>
+                                </div>
+
+                                <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Painters Degree</h3>
+                                            <span>Tullangsskolan, Orebro, Sweden</span>
+                                        </div>
+
+                                        <div class="timeline-body">
+                                            <p>My first professional education. I chose this course because it was a high chance of getting a job after graduation.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </li>-->
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /row -->
+
+            <!--<div class="row">
+                <div class="col-md-12">
+                    <div class="resume-title">
+                        <h3>Experience</h3>
+                    </div>
+                    <div class="resume">
+                        <ul class="timeline">
+                            <li class="timeline-inverted">
+                                <div class="posted-date">
+                                  <span class="month">2010-2015</span>
+                                </div>
+
+                                <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Painter</h3>
+                                            <span>Orebro Maleri AB & Sanda Maleri AB</span>
+                                        </div>
+
+                                        <div class="timeline-body">
+                                            <p>I worked at two companies during this time. I was at Orebro Maleri for 5 years, and Sanda Maleri for 1 year, and worked with all aspects of the profession.</p>
+                                        </div>
+                                    </div> 
+                                </div> 
+                            </li>
+
+                            <li>
+                                <div class="posted-date">
+                                  <span class="month">2016-now (until January 2017)</span>
+                                </div>
+
+                                <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+                                    <div class="timeline-content">
+                                        <div class="timeline-heading">
+                                            <h3>Developer</h3>
+                                            <span>IT-Mastaren, Orebro, Sweden</span>
+                                        </div>
+
+                                        <div class="timeline-body">
+                                            <p>What began with a weekly internship led to a full internship from April to June, which then resulted in a summer job and employment during studies.</p>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>-->
+        </div><!-- /.container -->
+    </section>
+
+    
+
+
+
+    <!--<section id="resume" class="resume-section section-padding">
+        <div class="container">
+            <h2 class="section-title wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Resume</h2>
             <div class="row">
                 <div class="col-md-12">
                     <div class="resume-title">
@@ -11,63 +136,63 @@
                             <li>
                                 <div class="posted-date">
                                     <span class="month">2015-now (until May 2017)</span>
-                                </div><!-- /posted-date -->
+                                </div>
 
                                 <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
                                             <h3>Developer</h3>
                                             <span>Microsoft .NET developer, EC Education, Orebro, Sweden</span>
-                                        </div><!-- /timeline-heading -->
+                                        </div>
 
                                         <div class="timeline-body">
                                             <p>After 6 years of working as a painter, I felt that this was not something I wanted to do a bigger part of my life. I started to look for other professions that could suit me better and where I could make a career in. I then found this course and today is really happy with my choice of profession.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
+                                        </div>
+                                    </div> 
+                                </div>
                             </li>
 
                             <li class="timeline-inverted">
                                 <div class="posted-date">
                                     <span class="month">2015-2015</span>
-                                </div><!-- /posted-date -->
+                                </div>
 
                                 <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
                                             <h3>Personal Trainer Certificate</h3>
                                             <span>Personal Trainer, DS Training School, Stockholm, Sweden</span>
-                                        </div><!-- /timeline-heading -->
+                                        </div>
 
                                         <div class="timeline-body">
                                             <p>I have always had a burning passion for training. After I have helped many with their training, I felt that I wanted to invest in myself and procure deeper knowledge of personal training and how the anatomy works. </p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
+                                        </div>
+                                    </div> 
+                                </div>
                             </li>
 
                             <li>
                                 <div class="posted-date">
                                   <span class="month">2007-2010</span>
-                                </div><!-- /posted-date -->
+                                </div>
 
                                 <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
                                             <h3>Painters Degree</h3>
                                             <span>Tullangsskolan, Orebro, Sweden</span>
-                                        </div><!-- /timeline-heading -->
+                                        </div>
 
                                         <div class="timeline-body">
                                             <p>My first professional education. I chose this course because it was a high chance of getting a job after graduation.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div><!-- /row -->
+            </div>
 
             <div class="row">
                 <div class="col-md-12">
@@ -79,43 +204,43 @@
                             <li class="timeline-inverted">
                                 <div class="posted-date">
                                   <span class="month">2010-2015</span>
-                                </div><!-- /posted-date -->
+                                </div>
 
                                 <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
                                             <h3>Painter</h3>
                                             <span>Orebro Maleri AB & Sanda Maleri AB</span>
-                                        </div><!-- /timeline-heading -->
+                                        </div>
 
                                         <div class="timeline-body">
                                             <p>I worked at two companies during this time. I was at Orebro Maleri for 5 years, and Sanda Maleri for 1 year, and worked with all aspects of the profession.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
+                                        </div>
+                                    </div> 
+                                </div> 
                             </li>
 
                             <li>
                                 <div class="posted-date">
                                   <span class="month">2016-now (until January 2017)</span>
-                                </div><!-- /posted-date -->
+                                </div>
 
                                 <div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
                                     <div class="timeline-content">
                                         <div class="timeline-heading">
                                             <h3>Developer</h3>
                                             <span>IT-Mastaren, Orebro, Sweden</span>
-                                        </div><!-- /timeline-heading -->
+                                        </div>
 
                                         <div class="timeline-body">
                                             <p>What began with a weekly internship led to a full internship from April to June, which then resulted in a summer job and employment during studies.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
+                                        </div>
+                                    </div> 
+                                </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-            </div><!-- /row -->
-        </div><!-- /.container -->
-    </section>
+            </div>
+        </div>
+    </section>-->
