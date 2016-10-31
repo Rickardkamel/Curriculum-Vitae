@@ -1,65 +1,57 @@
 <section id="about" class="about-section section-padding">
-  <div class="container">
-    <h2 class="section-title wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">About Me</h2>
+	<div class="container">
+		<h2 class="section-title wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">About Me</h2>
+		<div class="row">
+			<div class="col-md-4 col-md-push-8">
+				<div class="biography">
+					<div class="myphoto">
+						<img src="../../assets/images/myphoto.jpg" alt="">
+					</div>
+					<ul>
+						<li><strong>Name:</strong> {{aboutMeInfo?.Name}}</li>
+						<li><strong>Date of birth:</strong> {{aboutMeInfo?.BirthDate | date:'yMMMd'}}</li>
+						<li><strong>Address:</strong> {{aboutMeInfo?.Adress}}</li>
+						<li><strong>Nationality:</strong> {{aboutMeInfo?.Nationality}}</li>
+						<li><strong>Phone:</strong> {{aboutMeInfo?.Phone}</li>
+						<li><strong>Email:</strong> {{aboutMeInfo?.Email}}</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-8 col-md-pull-4">
+				<div class="short-info wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+					<h3>Who am I?</h3>
+					<p>My name is Rickard, I am 24 years old and live with my partner and dog in Kumla. I am a positive and happy person who
+						is driven to face challenges.
+						<br/> At the moment I am studying at EC Utbildningar in the course Microsoft .Net Developer - Cloud Computing, I graduate
+						in May 2017. Beside the studies I have two jobs, one as a personal trainer at StyrkaFamiljen AB and the other is as
+						a software developer at IT-Mastaren. I have previously worked as a painter in Orebro and felt after 6 years it was
+						time for a career change.
+						<br/> During my studies, I have independently taken hold of learning more than what .Net has to offer. My goal is to
+						become as versatile as a developer as possible.</p>
+				</div>
 
-    <div class="row">
+				<div class="short-info wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+					<h3>Projects</h3>
+					<div *ngFor="let project of projectList">
+						<p><i class="fa fa-github" aria-hidden="true"></i>
+							<strong><a href="{{project.GitLink}}">{{project.Title}}</a></strong>
+              {{project.Text}}
+						</p>
+            <hr/>
+					</div>
+				</div>
 
-      <div class="col-md-4 col-md-push-8">
-        <div class="biography">
-          <div class="myphoto">
-            <img src="../../assets/images/myphoto.jpg" alt="">
-          </div>
-          <ul>
-            <li><strong>Name:</strong> {{aboutMeInfo?.Name}}</li>
-            <li><strong>Date of birth:</strong> {{aboutMeInfo?.BirthDate | date:'yMMMd'}}</li>
-            <li><strong>Address:</strong> {{aboutMeInfo?.Adress}}</li>
-            <li><strong>Nationality:</strong> {{aboutMeInfo?.Nationality}}</li>
-            <li><strong>Phone:</strong> {{aboutMeInfo?.Phone}</li>
-            <li><strong>Email:</strong> {{aboutMeInfo?.Email}}</li>
-          </ul>
-        </div>
-      </div>
-      <!-- col-md-4 -->
+				<div class="my-signature">
+					<img src="../../assets/images/sign.png" alt="">
+				</div>
 
-      <div class="col-md-8 col-md-pull-4">
-        <div class="short-info wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-          <h3>Who am I?</h3>
-          <p>My name is Rickard, I am 24 years old and live with my partner and dog in Kumla. I am a positive and happy person who is driven to face challenges.
-            <br/>
-                At the moment I am studying at EC Utbildningar in the course Microsoft .Net Developer - Cloud Computing, I graduate in May 2017. Beside the studies I have two jobs, one as a personal trainer on the Strength family and the other is as a software developer at the IT Master. I have previously worked as a painter in Orebro and felt after 6 years it was time for a career change.
-            <br/>
-                During my training, I have independently taken hold of learning more than .Net has to offer. My goal is to become a developer as versatile as possible.</p>
-        </div>
-
-        <div class="short-info wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
-          <h3>Projects</h3>
-          <p>I have been working as a web interface designer since. I have a love of clean, elegant styling, and I have lots
-            of experience in the production of CSS3 and HTML5 for modern websites. I loving creating awesome as per my clients’
-            need. I think user experience when I try to craft something for my clients. Making a design awesome.</p>
-
-          <ul class="list-check">
-            <li>User Experience Design</li>
-            <li>Interface Design</li>
-            <li>Product Design</li>
-            <li>Branding Design</li>
-            <li>Digital Painting</li>
-            <li>Video Editing</li>
-          </ul>
-        </div>
-
-        <div class="my-signature">
-          <img src="../../assets/images/sign.png" alt="">
-        </div>
-
-        <div class="download-button">
-          <a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Send me message</a>
-          <a class="btn btn-primary btn-lg" href="#"><i class="fa fa-download"></i>download my cv</a>
-        </div>
-      </div>
+				<div class="download-button">
+					<a class="btn btn-info btn-lg" href="#contact"><i class="fa fa-paper-plane"></i>Send me message</a>
+					<a class="btn btn-primary btn-lg" href="#"><i class="fa fa-download"></i>download my cv</a>
+				</div>
+			</div>
 
 
-    </div>
-    <!-- /.row -->
-  </div>
-  <!-- /.container -->
+		</div>
+	</div>
 </section>
