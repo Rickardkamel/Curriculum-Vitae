@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AboutService } from './about.service';
-import { IAbout } from './about.interface';
+import { IAbout, IProject } from '../shared';
 
 @Component({
   selector: 'app-about',
@@ -8,6 +8,8 @@ import { IAbout } from './about.interface';
 })
 export class AboutComponent implements OnInit {
   aboutMeInfo: IAbout;
+  projectList: IProject;
+
   constructor(private aboutService: AboutService) { }
 
   ngOnInit() {
@@ -15,5 +17,10 @@ export class AboutComponent implements OnInit {
       .subscribe(aboutData => {
         this.aboutMeInfo = aboutData;
       });
+
+    this.aboutService.getProjects()
+    .subscribe(projects => {
+      this.projectList = projects;
+    })
   }
 }
