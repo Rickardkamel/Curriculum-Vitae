@@ -1,7 +1,7 @@
 import { GlobalVariableService } from '../shared/global-variable.service';
 import { Http, RequestOptions, Response, Headers } from '@angular/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/observable';
+// import { Observable } from 'rxjs/observable';
 import 'rxjs/Rx';
 
 @Injectable()

@@ -31,12 +31,4 @@ jQuery(function ($) {
         });
 
     } ());
-
-    $(".resume").each(function () {
-        $('ul:even li').addClass('timeline-inverted');
-        $('ul:odd li').removeClass('timeline-inverted');
-        // $(this).find("ul").find("li").addClass("timeline-inverted")
-        //     .filter(":odd").removeClass("timeline-inverted").end()
-        //     .filter(":even").addClass("timeline-inverted");
-    });
 });

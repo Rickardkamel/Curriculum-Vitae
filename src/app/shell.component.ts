@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
  <app-about></app-about>
  <app-technologies></app-technologies>
  <app-resume></app-resume>
- <app-skills></app-skills>
+ <app-skill></app-skill>
  <app-contact></app-contact>
  
 <div class="scroll-up">
