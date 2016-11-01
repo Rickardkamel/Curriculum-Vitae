@@ -798,19 +798,19 @@ ul.list-check li::before {
     float: left;
 }
 
-.timeline>li.timeline-inverted>.timeline-panel {
+.timeline:nth-child(even)>li.timeline-inverted>.timeline-panel {
     float: right;
     text-align: left;
 }
 
-.timeline>li.timeline-inverted>.timeline-panel:before {
+.timeline:nth-child(even)>li.timeline-inverted>.timeline-panel:before {
     right: auto;
     left: -15px;
     border-right-width: 15px;
     border-left-width: 0;
 }
 
-.timeline>li.timeline-inverted>.timeline-panel:after {
+.timeline:nth-child(even)>li.timeline-inverted>.timeline-panel:after {
     right: auto;
     left: -14px;
     border-right-width: 14px;
@@ -886,7 +886,7 @@ ul.list-check li::before {
     }
 
     .timeline>li .timeline-panel::before,
-    .timeline>li.timeline-inverted .timeline-panel::before {
+    .timeline:nth-child(even)>li.timeline-inverted .timeline-panel::before {
         content: "";
         top: 25px;
         position: absolute;
@@ -905,7 +905,7 @@ ul.list-check li::before {
         border-left: 12px solid #68c3a3;
     }
 
-    .timeline>li.timeline-inverted .timeline-panel::before {
+    .timeline:nth-child(even)>li.timeline-inverted .timeline-panel::before {
         right: 100%;
         border-right: 12px solid #ECECEC;
         -webkit-transition:all 400ms;
@@ -913,13 +913,13 @@ ul.list-check li::before {
         -o-transition:all 400ms;
         transition: all 400ms;
     }
-    .timeline>li.timeline-inverted .timeline-panel:hover::before {
+    .timeline:nth-child(even)>li.timeline-inverted .timeline-panel:hover::before {
         border-right: 12px solid #68c3a3;
         border-left: 0;
     }
 
     .timeline>li .timeline-panel::after,
-    .timeline>li.timeline-inverted .timeline-panel::after {
+    .timeline:nth-child(even)>li.timeline-inverted .timeline-panel::after {
         content: "";
         top: 25px;
         position: absolute;
@@ -939,7 +939,7 @@ ul.list-check li::before {
         border-left: 12px solid #68c3a3;
     }
 
-    .timeline>li.timeline-inverted .timeline-panel::after {
+    .timeline:nth-child(even)>li.timeline-inverted .timeline-panel::after {
         right: 100%;
         margin-right:-2px;
         border-right: 12px solid #FFFFFF;
@@ -948,7 +948,7 @@ ul.list-check li::before {
         -o-transition:all 400ms;
         transition: all 400ms;
     }
-    .timeline>li.timeline-inverted .timeline-panel:hover::after {
+    .timeline:nth-child(even)>li.timeline-inverted .timeline-panel:hover::after {
         border-right: 12px solid #68c3a3;
         border-left: 0;
     }
@@ -967,15 +967,15 @@ ul.list-check li::before {
 
 
 /* === Skill Section === */
-.skills-section {
+.skill-section {
     background-color: #1a1e23;
     color: #fff;   
 }
-.skills-section .section-title{
+.skill-section .section-title{
     color: #fff;
     margin-bottom: 110px;  
 }
-.skills-section .section-title h2{
+.skill-section .section-title h2{
     color: #fff;
 }
 .skill-title {
@@ -983,7 +983,7 @@ ul.list-check li::before {
     float: left;
 }
 .skill-title h3{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     margin-top: -6px;
     text-transform: capitalize;
