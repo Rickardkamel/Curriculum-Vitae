@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
  <app-resume></app-resume>
  <app-skill></app-skill>
  <app-contact></app-contact>
+ <app-references></app-references>
  
 <div class="scroll-up">
 		<a href="#home"><i class="fa fa-angle-up"></i></a>
