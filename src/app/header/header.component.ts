@@ -13,21 +13,20 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit() {
-    // this.stickyHeader();
+    this.stickyHeader();
   }
 
-  // stickyHeader() {
-  //   (function () {
-  //     $('.header').sticky({
-  //       topSpacing: 0
-  //     });
+  stickyHeader() {
+    (function () {
+      $('.header').sticky({
+        topSpacing: 0
+      });
 
 
-  //       $('body').scrollspy({
-  //           target: '.navbar-custom',
-  //           offset: 70
-  //        })
-  //   }());
-  // }
-
+        $('body').scrollspy({
+            target: '.navbar-custom',
+            offset: 70
+         });
+    }());
+  }
 }
