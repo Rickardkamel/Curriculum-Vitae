@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-
 import { ISkill } from '../shared';
 import { SkillService } from './skill.service';
-
+declare var $: any;
 @Component({
   selector: 'app-skill',
   templateUrl: './skill.component.html',
 })
+
 export class SkillComponent implements OnInit {
   private skillList: ISkill[] = [];
 
@@ -18,6 +18,18 @@ export class SkillComponent implements OnInit {
         this.skillList = skills;
         console.log(this.skillList);
       });
+
+    this.jQueryLoader();
+  }
+
+  jQueryLoader() {
+    $('.skill-progress').bind('inview', function (event, visible, visiblePartX, visiblePartY) {
+      if (visible) {
+        $.each($('div.progress-bar'), function () {
+          $(this).css('width', $(this).attr('aria-valuenow') + '%');
+        });
+        $(this).unbind('inview');
+      }
+    });
   }
 }
-
