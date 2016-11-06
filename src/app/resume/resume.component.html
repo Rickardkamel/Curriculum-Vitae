@@ -1,6 +1,6 @@
 <section id="resume" class="resume-section section-padding">
 	<div class="container">
-		<h2 class="section-title wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Resume</h2>
+		<h2 class="section-title wow fadeInUp">Resume</h2>
 		<div class="row" *ngFor="let resume of resumeList">
 			<div class="col-md-12">
 				<div class="resume-title">
@@ -15,7 +15,7 @@
 								<span *ngIf="timeStamp.SubTitle != 'IT-Mastaren, Orebro, Sweden'">{{timeStamp.ToDate | date:'y'}}</span>
 								</span>
 							</div>
-							<div class="timeline-panel wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+							<div class="timeline-panel wow">
 								<div class="timeline-content">
 									<div class="timeline-heading">
 										<h3>{{timeStamp.Title}}</h3>
