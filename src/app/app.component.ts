@@ -10,21 +10,8 @@ declare var $: any;
 export class AppComponent implements OnInit {
 
   ngOnInit() {
-    this.animatedScrolling();
-    this.backToTop();
-    this.fullScreenImage();
-  }
-
-  animatedScrolling() {
-    (function () {
-      $('a[href*=\\#]').bind('click', function (e) {
-        let anchor = $(this);
-        $('html, body').stop().animate({
-          scrollTop: $(anchor.attr('href')).offset().top
-        }, 1000);
-        e.preventDefault();
-      });
-    } ());
+        this.animatedScrolling();
+        this.backToTop();
   }
 
   backToTop() {
@@ -39,12 +26,14 @@ export class AppComponent implements OnInit {
     } ());
   }
 
-  fullScreenImage() {
+  animatedScrolling() {
     (function () {
-      $('.tt-fullHeight').height($(window).height());
-
-      $(window).resize(function () {
-        $('.tt-fullHeight').height($(window).height());
+      $('a[href*=\\#]').bind('click', function (e) {
+        let anchor = $(this);
+        $('html, body').stop().animate({
+          scrollTop: $(anchor.attr('href')).offset().top
+        }, 1000);
+        e.preventDefault();
       });
     } ());
   }
