@@ -51,12 +51,21 @@
 					<div class="col-md-12">
 						<div class="testi clearfix ">
 							<ul id="testimonial-carousel">
-								<li>
+								<li *ngFor="let reference of referenceList">
+									<div class="block-quote">
+										<div class="block-img"><img alt="" src="../../assets/images/{{reference.ImageUrl}}"></div>
+										<div class="block-icon"><i class="fa fa-quote-right"></i></div>
+										<h3 class="block-profile">{{reference.Name}}<span> {{reference.Occupation}} @ {{reference.Company}}</span></h3>
+										<blockquote>{{reference.QuoteText}}</blockquote>
+									</div>
+								</li>
+								<!--<li>
 									<div class="block-quote">
 										<div class="block-img"><img alt="" src="../../assets/images/marcus.jpg"></div>
 										<div class="block-icon"><i class="fa fa-quote-right"></i></div>
 										<h3 class="block-profile">Marcus Carlsson <span> Fullstack Developer @ Ovo Energy</span></h3>
-										<blockquote>Rickard is one of the most hungry junior developers I have ever encounter and a must have for companies that is looking for a key player to not only build up but also learn from.</blockquote>
+										<blockquote>Rickard is one of the most hungry junior developers I have ever encounter and a must have for companies that is
+											looking for a key player to not only build up but also learn from.</blockquote>
 									</div>
 								</li>
 								<li>
@@ -64,8 +73,7 @@
 										<div class="block-img"><img alt="" src="../../assets/images/jonas.jpg"></div>
 										<div class="block-icon"><i class="fa fa-quote-right"></i></div>
 										<h3 class="block-profile">Jonas Enander <span> School Director @ EC Utbildning</span></h3>
-										<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum neque et, ratione incidunt dolores cupiditate alias
-											reprehenderit, natus quidem, nesciunt adipisci itaque! Repudiandae, amet? Laboriosam at doloribus beatae ab, temporibus.</blockquote>
+										<blockquote>&#43;&#52;&#54;&#32;&#40;&#48;&#41;&#49;&#57;&#32;&#55;&#54;&#52;&#32;&#49;&#52;&#32;&#53;&#51;</blockquote>
 									</div>
 								</li>
 								<li>
@@ -81,10 +89,11 @@
 										<div class="block-img"><img alt="" src="../../assets/images/michel.jpg"></div>
 										<div class="block-icon"><i class="fa fa-quote-right"></i></div>
 										<h3 class="block-profile">Michel Ishak<span> Developer @ IT-Mastaren</span></h3>
-										<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum neque et, ratione incidunt dolores cupiditate alias
-											reprehenderit, natus quidem, nesciunt adipisci itaque! Repudiandae, amet? Laboriosam at doloribus beatae ab, temporibus.</blockquote>
+										<blockquote>Working with Rickard is a delight, he takes responsibility, documents and above all makes sure that
+											things gets done. He is comfortable in different situations, both socially and in programming, easy to learn and
+											takes critisms to become better. Nice guy who spread laughter and his good humor to his surroundings</blockquote>
 									</div>
-								</li>
+								</li>-->
 							</ul>
 						</div>
 					</div>
