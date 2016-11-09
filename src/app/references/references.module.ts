@@ -1,15 +1,17 @@
+import { SharedModule } from '../shared/shared.module';
 import { NgModule } from '@angular/core';
 
 import { ReferencesComponent }   from './references.component';
+import { ReferencesService } from './references.service';
 
 @NgModule({
-    imports: [],
+    imports: [SharedModule],
     exports: [
         ReferencesComponent
         ],
     declarations: [
         ReferencesComponent
     ],
-    providers: [],
+    providers: [ReferencesService],
 })
 export class ReferencesModule { }
