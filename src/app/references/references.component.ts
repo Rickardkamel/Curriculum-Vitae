@@ -1,3 +1,6 @@
+import { Observable } from 'rxjs/Rx';
+import { IReference } from '../shared/reference.interface';
+import { ReferencesService } from './references.service';
 import { Component, OnInit } from '@angular/core';
 
 declare var $: any;
@@ -7,12 +10,26 @@ declare var $: any;
   templateUrl: './references.component.html'
 })
 export class ReferencesComponent implements OnInit {
+  ticks = 0;
+  private referenceList: IReference[] = [];
 
-  constructor() { }
+  constructor(private referencesService: ReferencesService) { }
 
   ngOnInit() {
-    this.carousel();
-    this.blockCarousel();
+
+    this.referencesService.getReferences()
+      .subscribe(references => {
+        this.referenceList = references;
+
+        console.log(this.referenceList);
+      });
+    let timer = Observable.timer(1000, 1000);
+    timer.subscribe(t => {
+      this.carousel();
+      this.blockCarousel();
+    });
+
+
   }
 
   carousel() {
