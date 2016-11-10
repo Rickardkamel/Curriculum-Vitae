@@ -1,3 +1,4 @@
+import { Observable } from 'rxjs/Rx';
 import { Component, OnInit } from '@angular/core';
 import { ISkill } from '../shared';
 import { SkillService } from './skill.service';
@@ -17,9 +18,11 @@ export class SkillComponent implements OnInit {
       .subscribe(skills => {
         this.skillList = skills;
         console.log(this.skillList);
+        let timer = Observable.timer(500, 1000);
+        timer.subscribe(t => {
+          this.jQueryLoader();
+        });
       });
-
-    this.jQueryLoader();
   }
 
   jQueryLoader() {
