@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var WOW: any;
 declare var $: any;
 
 @Component({
@@ -10,8 +11,22 @@ declare var $: any;
 export class AppComponent implements OnInit {
 
   ngOnInit() {
-        this.animatedScrolling();
-        this.backToTop();
+    this.initWow();
+    this.animatedScrolling();
+    this.backToTop();
+  }
+
+  initWow() {
+    (function () {
+
+      new WOW({
+
+        mobile: false
+
+      }).init();
+
+    } ());
+
   }
 
   backToTop() {
