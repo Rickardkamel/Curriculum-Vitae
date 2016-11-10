@@ -10,7 +10,6 @@ declare var $: any;
   templateUrl: './references.component.html'
 })
 export class ReferencesComponent implements OnInit {
-  ticks = 0;
   private referenceList: IReference[] = [];
 
   constructor(private referencesService: ReferencesService) { }
