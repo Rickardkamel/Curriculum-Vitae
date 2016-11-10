@@ -8,7 +8,7 @@
 				</div>
 				<div class="resume">
 					<ul class="timeline" *ngFor="let timeStamp of resume.TimeStamps">
-						<li class="timeline-inverted">
+						<li class="timeline-inverted wow fadeInUp">
 							<div class="posted-date">
 								<span class="month">{{timeStamp.FromDate | date:'y'}} -
                                         <span *ngIf="timeStamp.SubTitle == 'IT-Mastaren, Orebro, Sweden'">now (until {{timeStamp.ToDate | date:'y'}})</span>
