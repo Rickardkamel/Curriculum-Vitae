@@ -4,6 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-shell',
   template:
   `
+  <div class="fade-in-body">
  <app-home></app-home>
  <app-header></app-header>
  <app-about></app-about>
@@ -16,6 +17,8 @@ import { Component, OnInit } from '@angular/core';
 <div class="scroll-up">
 		<a href="#home"><i class="fa fa-angle-up"></i></a>
 	</div>
+ </div>
+  
   `,
 })
 
