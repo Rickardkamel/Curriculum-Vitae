@@ -21,8 +21,8 @@ export class AboutService {
             .map((response: Response) => response.json());
     }
 
-    getProjects(){
+    getProjects() {
         return this.http.get(this.apiUrl + 'api/project', { headers: this.header })
-        .map((response: Response) => response.json());
+            .map((response: Response) => response.json());
     }
 }
