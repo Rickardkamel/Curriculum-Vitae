@@ -1,17 +1,17 @@
 // --- AngularImports --- \\
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 
 
 // --- ProjectImports --- \\
-//ServiceImports
+// ServiceImports
 import { GlobalVariableService } from './shared/global-variable.service';
 
 // SourceModules
 import { AppComponent } from './app.component';
-import { ShellComponent } from './shell.component'
+import { ShellComponent } from './shell.component';
 
 // ComponentModules
 import { HomeModule } from './home/home.module';
@@ -35,17 +35,16 @@ import { AppRoutingModule } from './routes/app-routing.module';
   imports: [
     HttpModule,
     BrowserModule,
-    FormsModule,
 
     // ComponentModules
+    ContactModule,
+    TechnologiesModule,
+    ReferencesModule,
     HomeModule,
     HeaderModule,
     AboutModule,
     ResumeModule,
     SkillModule,
-    ContactModule,
-    TechnologiesModule,
-    ReferencesModule,
 
     // Routing
     AppRoutingModule,
