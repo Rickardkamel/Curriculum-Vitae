@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
-
+import { ContactService } from './contact.service';
 import { ContactComponent } from './contact.component';
+import { FORM_DIRECTIVES } from '@angular/forms/src/directives';
+
 
 @NgModule({
     imports: [],
@@ -8,9 +10,10 @@ import { ContactComponent } from './contact.component';
         ContactComponent
     ],
     declarations: [
-        ContactComponent
+        ContactComponent,
+        FORM_DIRECTIVES
     ],
-    providers: []
+    providers: [ContactService]
 })
 
 export class ContactModule { }
