@@ -19,16 +19,12 @@ export class ReferencesComponent implements OnInit {
     this.referencesService.getReferences()
       .subscribe(references => {
         this.referenceList = references;
-
-        console.log(this.referenceList);
+        let timer = Observable.timer(1000, 1000);
+        timer.subscribe(t => {
+          this.carousel();
+          this.blockCarousel();
+        });
       });
-    let timer = Observable.timer(1000, 1000);
-    timer.subscribe(t => {
-      this.carousel();
-      this.blockCarousel();
-    });
-
-
   }
 
   carousel() {
@@ -45,7 +41,6 @@ export class ReferencesComponent implements OnInit {
 
   blockCarousel() {
     $('#block-slider').owlCarousel({
-      // navigation: false,
       slideSpeed: 300,
       paginationSpeed: 400,
       responsiveRefreshRate: 200,
