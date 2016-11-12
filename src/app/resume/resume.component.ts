@@ -17,7 +17,6 @@ export class ResumeComponent implements OnInit {
     this.resumeService.getResumes()
     .subscribe(resumes => {
       this.resumeList = resumes;
-      console.log(this.resumeList);
     });
   }
 
