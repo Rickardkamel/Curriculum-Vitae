@@ -27,23 +27,11 @@ export class ContactService {
       'Content-Type': 'application/json'
     });
 
-    return this.http.post(this.apiUrl + 'api/email', body, { headers: headers})
-      .map((response: Response) => response.json());
-  }
-
-  postEmailPhP(newMail: IEmail): Observable<string> {
-    let body = `name=${newMail.name}&email=${newMail.email}&message=${newMail.message}`;
-    let headers = new Headers({ 'Content-Type': 'application/x-www-form-urlencoded' });
-    let options = new RequestOptions({ headers: headers });
-
-    return this.http.post(this.contactUrl, body, options)
-      .map(res => <string>res.json())
+    return this.http.post(this.apiUrl + 'api/email', body, { headers: headers })
       .catch(this.handleError);
   }
 
   private handleError(error: Response) {
-    // in a real world app, we may send the server to some remote logging infrastructure
-    // instead of just logging it to the console
     console.error('Error in sending mail: ' + error);
     return Observable.throw(error.json().error || 'Server error');
   }

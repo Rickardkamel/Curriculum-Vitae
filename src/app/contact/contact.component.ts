@@ -3,6 +3,7 @@ import { ContactService } from './contact.service';
 import { IEmail } from '../shared/email.interface';
 import { Component, OnInit } from '@angular/core';
 
+declare var swal: any;
 
 @Component({
   selector: 'app-contact',
@@ -11,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class ContactComponent implements OnInit {
 
-  public message: IEmail = { name: '', email: '', message: '' };
+  public message: IEmail = { name: '', email: '', subject: '', message: '' };
 
   constructor(private contactService: ContactService) { }
 
@@ -25,15 +26,21 @@ export class ContactComponent implements OnInit {
   }
 
   handleResponse(response) {
-    if (response.status === 'success') {
-      this.message = { name: '', email: '', message: '' };
-      alert('Thank you for your message');
-    }
-
-    if (response.status === 'error') {
-      alert('Sorry, your message could not be sent. Try again or send the email directly to rickardkamel@gmail.com. Thank you');
+    if (response.status === 200) {
+      this.message = { name: '', email: '', subject: '', message: '' };
+      swal({
+        title: 'Sent!',
+        text: 'Your message has been sent!',
+        type: 'success',
+        confirmButtonText: 'Ok'
+      });
+    } else {
+      swal({
+        title: 'Error!',
+        text: 'Sorry, your message could not be sent. Try again or send the email directly to rickardkamel@gmail.com. Thank you!',
+        type: 'error',
+        confirmButtonText: 'Ok'
+      });
     }
   }
 }
-
-
