@@ -17,7 +17,6 @@ export class SkillComponent implements OnInit {
     this.skillService.getSkills()
       .subscribe(skills => {
         this.skillList = skills;
-        console.log(this.skillList);
         let timer = Observable.timer(500, 1000);
         timer.subscribe(t => {
           this.jQueryLoader();
