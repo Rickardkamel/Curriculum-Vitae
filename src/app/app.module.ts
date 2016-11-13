@@ -20,7 +20,7 @@ import { AboutModule } from './about/about.module';
 import { ResumeModule } from './resume/resume.module';
 import { SkillModule } from './skill/skill.module';
 import { ContactModule } from './contact/contact.module';
-import { TechnologiesModule } from './technologies/technologies.module';
+import { TechniquesModule } from './techniques/techniques.module';
 import { ReferencesModule } from './references/references.module';
 
 // Routing
@@ -38,7 +38,7 @@ import { AppRoutingModule } from './routes/app-routing.module';
 
     // ComponentModules
     ContactModule,
-    TechnologiesModule,
+    TechniquesModule,
     ReferencesModule,
     HomeModule,
     HeaderModule,
