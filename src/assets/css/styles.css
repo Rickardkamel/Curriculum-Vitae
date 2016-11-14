@@ -843,6 +843,7 @@ ul.list-check li::before {
   	margin: 0 32px;
   	padding: 40px;
   	position:relative;
+    cursor: -webkit-grabbing;
 }
 
 
@@ -960,9 +961,11 @@ ul.list-check li::before {
 .progress-bar {
     background-color: #68c3a3;
 }
+
+
 .progress-bar span{
     position: absolute;
-    top: -20px;
+    /*top: -20px;*/
     right: 15px;
 }
 
@@ -973,7 +976,31 @@ ul.list-check li::before {
   transition:  width 2s ease-in-out;
 }
 
+.progress-definition {
+    color: gray;
+}
 
+.progress-less-fluent {
+    left: -37%; 
+    top: -30px;
+    font-style: italic;
+}
+
+.progress-fluent {
+    right: 0px !important; 
+    top: -30px;
+    font-style: italic;
+}
+
+.progress-line-less-fluent{
+    left: -47%;
+    top: -15px;
+}
+
+.progress-line-fluent {
+    right: 0px !important;
+    top: -15px;
+}
 .skill-chart h3 {
     margin-top: 20px;
 }
