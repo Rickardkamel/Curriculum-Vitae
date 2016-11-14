@@ -1,6 +1,6 @@
 <section id="skill" class="skill-section section-padding">
 	<div class="container">
-		<h2 class="section-title wow fadeInUp">skill</h2>
+		<h2 class="section-title wow fadeInUp">skills</h2>
 		<div class="row">
 			<div class="col-md-6" *ngFor="let skill of skillList">
 				<div class="skill-progress wow fadeInUp">
@@ -8,12 +8,25 @@
 						<h3>{{skill.Name}}</h3>
 					</div>
 					<div class="progress">
-						<div class="progress-bar six-sec-ease-in-out" role="progressbar" [attr.aria-valuenow]="skill.Percentage" aria-valuemin="0" aria-valuemax="100"
-							><span>{{skill.Percentage}}%</span>
+						<div class="progress-bar six-sec-ease-in-out" role="progressbar" [attr.aria-valuenow]="skill.Percentage" aria-valuemin="0"
+							aria-valuemax="100">
+							<div *ngIf="skill.Name == 'C#'" class="progress-definition">
+								<span class="progress-less-fluent">less fluent</span>
+								<span class="progress-fluent">fluent</span>
+								<span class="progress-line-less-fluent">|</span>
+								<span class="progress-line-fluent">|</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<!--<div style="text-align: center">
+			<span>0 = No experience</span>
+			<br>
+			<span>5 = Experienced</span>
+			<br>
+			<span>10 = Very experienced</span>
+		</div>-->
 	</div>
 </section>
